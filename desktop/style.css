@@ -1,0 +1,79 @@
+body {
+    font-family: SansSerif sans-serif;
+
+}
+
+.hitachi-seawater {
+    position: relative;
+    display: inline-block;
+    width: 800px;
+    height: 528.8px;
+    background-color: #262626;
+}
+
+.hitachi-seawater__img {
+    width: inherit;
+    height: inherit;
+}
+
+.hitachi-seawater__tech {
+    position: absolute;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0;
+
+}
+
+.hitachi-seawater__tech_one {
+    top: 116px;
+    left: 80px;
+    width: 60px;
+    height: 60px;
+}
+
+.hitachi-seawater__tech_two {
+    width: 30px;
+    height: 30px;
+    top: 193px;
+    left: 312px;
+}
+
+.hitachi-seawater__tech_six {
+    width: 29px;
+    height: 29px;
+    left: 647px;
+    top: 293px;
+}
+
+.hitachi-seawater__text {
+    width: inherit;
+    background-color: inherit;
+    height: 130px;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    animation: fadeOut 1s;
+}
+
+.hitachi-seawater__tech:hover ~ .hitachi-seawater__text {
+    animation: fadeIn 1s;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
